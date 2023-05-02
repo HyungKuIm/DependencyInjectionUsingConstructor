@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="communication" class="com.oraclejava.service.Communication">
-        <constructor-arg name="activeMQMessage" ref="activeMQMessage" />
+        <constructor-arg name="message" ref="activeMQMessage" />
     </bean>
 
     <bean id="activeMQMessage" class="com.oraclejava.message.ActiveMQMessage" />

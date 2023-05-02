@@ -1,15 +1,16 @@
 package com.oraclejava.service;
 
 import com.oraclejava.message.ActiveMQMessage;
+import com.oraclejava.message.Messaging;
 
 public class Communication {
-    private ActiveMQMessage activeMQMessage;
+    private Messaging message;
 
-    public Communication(ActiveMQMessage activeMQMessage) {
-        this.activeMQMessage = activeMQMessage;
+    public Communication(Messaging message) {
+        this.message = message;
     }
 
     public void communicate() {
-        activeMQMessage.sendMessage();
+        message.sendMessage();
     }
 }
