@@ -6,7 +6,7 @@ import com.oraclejava.message.Messaging;
 public class Communication {
     private Messaging message;
 
-    public Communication(Messaging message) {
+    public void setMessage(Messaging message) {
         this.message = message;
     }
 

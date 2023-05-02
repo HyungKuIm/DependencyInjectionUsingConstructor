@@ -5,7 +5,8 @@
 
     <bean id="communication" class="com.oraclejava.service.Communication">
 <!--        <constructor-arg name="message" ref="activeMQMessage" />-->
-        <constructor-arg name="message" ref="kakaoMessage" />
+<!--        <constructor-arg name="message" ref="kakaoMessage" />-->
+        <property name="message" ref="activeMQMessage" />
     </bean>
 
     <bean id="activeMQMessage" class="com.oraclejava.message.ActiveMQMessage" />
